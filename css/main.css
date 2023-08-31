@@ -1,0 +1,358 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+
+/* ----------> body */
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+/* ----------> header */
+header{
+    width: 100%;
+    background: #fff;
+    border:1px solid #DEE6E8;
+}
+
+header .inner{
+    width: 1000px;
+    height: 80px;
+    margin: 0 auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .inner h1 a{
+    display: block;
+    width: 94px;
+    height: 44px;
+    background: url("../images/logo.png") no-repeat;
+    text-indent: -99999px;
+}
+
+header .inner ul.gnb{
+    display: flex;
+}
+
+header .inner ul.gnb li{
+    padding-left: 53px;
+}
+
+        header .inner ul.gnb li:first-child{
+            padding-left: 0;
+        }
+
+header .inner ul.gnb li a{
+    font-size: 18px;
+    font-weight: 700;
+    color: #222;
+}
+
+
+/* mobile menu */
+header .inner .m_btn, header .inner .m_gnb{
+    display: none;
+}
+
+
+/* ----------> main */
+/* visual */
+main .visual .slick-arrow{
+    width: 25px;
+    height: 49px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    text-indent: -99999px;
+    border: none;
+    cursor: pointer;
+}
+
+main .visual .slick-prev{
+    background: url("../images/btn_left.png") no-repeat;  
+    left: 20px; 
+}
+
+main .visual .slick-next{ 
+    background: url("../images/btn_right.png") no-repeat; 
+    right: 20px;
+}
+
+main .visual .slick-dots li{
+    display: none;
+}
+
+
+/* search */
+main .search{
+    width: 100%;
+    background: #FF8C97;
+    margin-top: -2px;
+}
+
+main .search .inner{
+    width: 1000px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+main .search .inner h2{
+    float: left;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+
+main .search .inner h3{
+    float: left;
+    margin: 24px 8px 0 0;
+}
+
+main .search .inner .search_area .area_wrap{
+    float: left;
+    margin-top: 12px;
+}
+
+main .search .inner .search_area .area_wrap select{
+    width: 150px;
+    height: 38px;
+    background: #fff url("../images/arrow_on.png") no-repeat 97% center;
+    outline: none;  
+    padding: 0 6px;
+    appearance: none;
+}
+
+main .search .inner .search_area .school_wrap{
+    float: left;
+    margin: 12px 0 0 23px;
+    overflow: hidden;
+}
+
+main .search .inner .search_area .school_wrap h3{
+   margin-top: 12px;
+}
+
+main .search .inner .search_area .school_wrap .search_store{
+    float: left;
+}
+
+main .search .inner .search_area .school_wrap .search_store input{
+    width: 246px;
+    height: 36px;
+    background: #fff;
+    border: none;
+    outline: none;
+    text-indent: 8px;
+    vertical-align: middle;
+}
+
+main .search .inner .search_area .school_wrap .search_store button{
+    width: 110px;
+    height: 38px;
+    background: #FFD37B;
+    border: 1px solid #FFD37B;
+    font-weight: 700;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+
+/* section1 */
+main .section1{
+    max-width: 1000px;
+    margin: 55px auto 0;
+    overflow: hidden;
+}
+
+main .section1 .box{
+    float: left;
+    width: 33.33%;
+}
+
+main .section1 .box img{
+    width: 100%;
+}
+
+main .section1 .box p{
+    text-align: center;
+    font-size: 15px;
+    color: #555;
+    line-height: 22px;
+    margin-top: 15px;
+}
+
+
+/* section2 */
+main .section2, main .section3{
+    max-width: 1000px;
+    margin: 85px auto 0;
+}
+
+main section h2{
+    text-align: center;
+}
+
+main section p{
+    text-align: center;
+    font-size: 15px;
+    color: #555;
+    margin: 15px 0 35px 0;
+}
+
+main .section2 .model_list{
+    overflow: hidden;
+}
+
+main .section2 .model_list li{
+    float: left;
+    width: 25%;
+    margin-top: -1px;
+}
+
+
+/* section3 */
+main .section3{
+    overflow: hidden;
+}
+
+main .section3 .event{
+    float: left;
+    width: 30%;
+}
+
+main .section3 .event .slick-dots{
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+}
+
+main .section3 .event .slick-dots li{
+    float: left;
+    margin-right: 10px;
+}
+
+main .section3 .event .slick-dots li button{
+    width: 18px;
+    height: 18px;
+    background: url("../images/main_dots.png") no-repeat;
+    text-indent: -99999px;
+    border: none;
+    cursor: pointer;
+}
+
+        main .section3 .event .slick-dots .slick-active button{
+            background: url("../images/main_dots_1.png") no-repeat;   
+        }
+
+main .section3 .video{
+    float: right;
+    width: 68%;
+}
+
+main .section3 .video iframe{
+    width: 100%;
+    height: 406px;
+}
+
+
+/* section4 */
+main .section4{
+    max-width: 1000px;
+    border: 2px solid #75C1E1;
+    margin: 20px auto 30px;
+    overflow: hidden;
+}
+
+main .section4 h2{
+    float: left;
+    background: #62C7F5;
+    padding: 0 20px;
+}
+
+main .section4 .sns_list{
+    float: right;
+}
+
+main .section4 .sns_list li{
+    float: left;
+    width: 16.66%;
+    margin-top: 15px;
+}
+
+
+/* ----------> footer */
+footer{
+    width: 100%;
+    background: #F5F3F4;
+}
+
+footer .inner{
+    max-width: 1000px;
+    height: 135px;
+    margin: 0 auto;
+    padding: 24px 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+footer .inner .info{
+    display: flex;
+}
+
+footer .inner .info li{
+    padding: 0 10px;
+    position: relative;
+}
+
+        footer .inner ul.info li:first-child{
+            padding-left: 0;
+        }
+
+        footer .inner ul.info li:last-child{
+            padding-right: 0;
+        }
+
+        footer .inner ul.info li:before{
+            content: '';
+            width: 1px;
+            height: 12px;
+            background: #ddd;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform:translateY(-50%);
+        }
+
+        footer .inner ul.info li:first-child:before{
+            display: none;
+        }
+
+footer .inner ul.info li a{
+    font-size: 14px;
+    color: #222;
+}
+
+footer .inner address {
+    font-size: 12px;
+    font-weight: 300;
+    color: #888;
+    line-height: 20px;
+    margin: 12px 0;
+}
+
+footer .inner address .show{
+    display: none;
+}
+
+footer .inner .copy{
+    font-size: 12px;
+    color: #888;
+}
+
+footer .btn_top{
+    position: absolute;
+    top: 0;
+    right: -100px;
+}
